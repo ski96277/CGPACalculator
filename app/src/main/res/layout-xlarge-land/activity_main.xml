@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firstpagebackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/credit"
+        android:textColor="#faf9f9"
+        android:textSize="60sp" />
+
+    <Spinner
+        android:id="@+id/creditNumber"
+
+        android:layout_width="320dp"
+        android:layout_height="87dp"
+        android:layout_above="@+id/GradePoint"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:entries="@array/creditList"
+        android:scrollbarSize="60sp"
+        android:textColor="#fdf9f9" />
+
+    <TextView
+        android:id="@+id/GradePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="89dp"
+        android:text="@string/point"
+        android:textColor="#fcf5f5"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/GradepointNumber1"
+        android:layout_width="311dp"
+        android:layout_height="92dp"
+        android:layout_alignStart="@+id/creditNumber"
+        android:layout_alignLeft="@+id/creditNumber"
+        android:layout_alignBottom="@+id/GradePoint"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="-14dp"
+        android:hint="@string/inputhint"
+        android:textColor="#000"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/AddButtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GradepointNumber1"
+        android:layout_alignStart="@+id/creditNumber"
+        android:layout_alignLeft="@+id/creditNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/button"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/TotalCGPA"
+        android:layout_width="897dp"
+        android:layout_height="99dp"
+        android:layout_below="@+id/AddButtom"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-116dp"
+        android:text="@string/totalcgpa"
+        android:textColor="#f5f1f1"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/TotalCredit"
+        android:layout_width="806dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TotalCGPA"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="93dp"
+        android:text="@string/totalcredit"
+        android:textColor="#fcf7f7"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/allcredit"
+        android:layout_width="429dp"
+        android:layout_height="113dp"
+        android:layout_below="@+id/TotalCredit"
+        android:layout_alignStart="@+id/AddButtom"
+        android:layout_alignLeft="@+id/AddButtom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="-109dp"
+        android:layout_marginLeft="-109dp"
+        android:layout_marginTop="-96dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:onClick="allcredit"
+        android:text="@string/seeallcredit"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="60sp" />
+
+
+</RelativeLayout>

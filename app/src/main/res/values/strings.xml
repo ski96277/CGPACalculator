@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CGPACalculator</string>
+
+    <string name="carefully">Select Carefully</string>
+    <string name="credit">Credit  = </string>
+    <string name="point">Point = </string>
+    <string name="totalcredit">Total Credit = </string>
+    <string name="totalcgpa">Total CGPA =  </string>
+    <string name="inputhint">Input Point</string>
+    <string name="seeallcredit">See All Credit</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string-array name="creditList">
+        <item>Select</item>
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+    <string name="button">ADD ( + )</string>
+</resources>
